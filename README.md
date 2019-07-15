@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Screenshots
+
+![image](https://github.com/GungnirX/redux-email-client/blob/master/Screen%20Shot%202019-07-14%20at%2023.11.10.png)
+![image](https://github.com/GungnirX/redux-email-client/blob/master/Screen%20Shot%202019-07-14%20at%2023.12.30.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
