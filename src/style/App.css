@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: deepskyblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+	border-radius: 5px;
+}
+
+.loading {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.mailbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 600px;
+}
+
+.email-tags {
+  position: relative;
+  width: 200px;
+  background-color: black;
+  border-radius: 5px 0 0 5px;
+  color: white;
+}
+
+.compose-button {
+  position: relative;
+  text-align: center;
+  left: 50%;
+	transform: translate(-50%);
+  border-style: none;
+  outline: none;
+  width: 100%;
+  height: 100px;
+  margin-top: 0;
+  background-color: rgb(0, 180, 255);
+  border-radius: 5px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.compose-button:hover {
+  background-color: deepskyblue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.compose-button i {
+  padding-right: 10px;
+  color: deeppink;
+}
+
+.email-tags ul {
+  margin-top: 60px;
+  font-size: 15px;
+  list-style: none;
+  left: 0;
+  margin-left: 0;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.email-tags .other-tags {
+  margin-left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.email-tags .current-tag {
+  margin-left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  border-left: 5px solid deeppink;
+  background: deepskyblue;
+  font-weight: bold;
+}
+
+.email-tags .other-tags:hover {
+  background: rgba(0, 191, 255, 0.6);
+  
+}
+
+.email-tags ul i {
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.count {
+  position: absolute;
+  right: 30px;
+}
+
+.email-list {
+  position: relative;
+  width: 300px;
+  overflow-y: scroll;
+  background-color: rgb(230, 230, 230);
+  font-size: 15px;
+  border-right: 1px solid lightgrey;
+}
+
+.email-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(250,250,250);
+}
+
+.email-list .other-emails {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.email-list .current-email {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  background-color: rgb(0, 191, 255, 0.2);
+}
+
+.email-list .other-emails:hover {
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+.email-list .unread-email:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: deeppink;
+  margin-top: 10px;
+}
+
+.email-list .from-and-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.email-list .from-in-list {
+  color: grey;
+}
+
+.email-list .time-in-list {
+  color: grey;
+}
+
+.empty {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+
+.email-detail {
+  width: 550px;
+}
+
+.email-detail .subject-to-time {
+  background-color: rgb(235, 235, 235);
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 0 5px 0 0;
+}
+
+.email-detail .subject-in-detail {
+  width: 90%;
+}
+
+.email-detail .delete-button {
+  width: 10%;
+  text-align: right;
+}
+
+.email-detail .delete-button i {
+  cursor: pointer;
+}
+
+.email-detail .from-in-detail {
+  width: 50%;
+  color: grey;
+}
+
+.email-detail .time-in-detail {
+  width: 50%;
+  text-align: right;
+  color: grey;
+}
+
+.email-detail .message-in-detail {
+  padding: 20px;
+}
+
